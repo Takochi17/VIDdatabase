@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: center;
+   color: #fff;
+   float: right;
+padding: 5px;
+}
+
+.footer-container {
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-right {
+  float: right;
+}
+@font-face {
+  font-family: 'Roboto-fallback-1';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial');
+}
+
+@font-face {
+  font-family: 'Roboto-fallback-2';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arimo');
+}
+
+html {
+  font-family: 'Roboto', 'Roboto-fallback-1', 'Roboto-fallback-2', sans-serif;
+}
+.page-template-template-layout-content-sidebar .x-main {
+  margin-right: 1%;
+}
+
+.page-template-template-layout-content-sidebar .x-sidebar {
+  float: left;
+  width: 28%;
+}

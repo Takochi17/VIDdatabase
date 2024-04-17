@@ -1,0 +1,104 @@
+<head>
+<title>Barangay VI-D ADMIN LOGIN</title>
+</head>
+<body>
+<input type="search" id="search-bar" placeholder="Search...">
+<ul id="item-list"></ul>
+
+<style>
+
+</style>
+
+<script>
+const searchBar = document.getElementById('search-bar');
+const itemList = document.getElementById('item-list');
+
+// Add items to the list
+const items = ['Item 1', 'Item 2', 'Item 3'];
+items.forEach(item => {
+  const li = document.createElement('li');
+  li.textContent = item;
+  li.addEventListener('click', () => {
+    if (confirm('Do you want to remove this item permanently?')) {
+      items.splice(items.indexOf(item), 1);
+      itemList.innerHTML = '';
+      items.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        li.addEventListener('click', () => {
+          if (confirm('Do you want to remove this item permanently?')) {
+            items.splice(items.indexOf(item), 1);
+            itemList.innerHTML = '';
+            items.forEach(item => {
+              const li = document.createElement('li');
+              li.textContent = item;
+              li.addEventListener('click', () => {
+                if (confirm('Do you want to remove this item permanently?')) {
+                  items.splice(items.indexOf(item), 1);
+                  itemList.innerHTML = '';
+                  items.forEach(item => {
+                    const li = document.createElement('li');
+                    li.textContent = item;
+                    li.addEventListener('click', () => {
+                      if (confirm('Do you want to remove this item permanently?')) {
+                        items.splice(items.indexOf(item), 1);
+                        itemList.innerHTML = '';
+                        items.forEach(item => {
+                          const li = document.createElement('li');
+                          li.textContent = item;
+                          li.addEventListener('click', () => {
+                            if (confirm('Do you want to remove this item permanently?')) {
+                              items.splice(items.indexOf(item), 1);
+                              itemList.innerHTML = '';
+                            }
+                          });
+                          itemList.appendChild(li);
+                        });
+                      }
+                    });
+                    itemList.appendChild(li);
+                  });
+                }
+              });
+              itemList.appendChild(li);
+            });
+          }
+        });
+        itemList.appendChild(li);
+      });
+    }
+  });
+  itemList.appendChild(li);
+});
+
+// Filter the list based on the search query
+searchBar.addEventListener('input', () => {
+  const query = searchBar.value.toLowerCase();
+  items.forEach(item => {
+    const li = itemList.querySelector(`li:contains(${item})`);
+    if (item.toLowerCase().includes(query)) {
+      li.style.display = 'block';
+    } else {
+      li.style.display = 'none';
+    }
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
