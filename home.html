@@ -1,34 +1,69 @@
 <html>
 <head>
-<title>Barangay Residency</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Barangay Residency</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      background-image: url("main.jpg");
+      color: white;
+      font-size: 16px;
+    }
+    @media only screen and (max-width: 600px) {
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      .topnav a {
+        float: none;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 0;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
-<div class="topnav">
-<a href="register.html">Register</a>
-<a href="unregister.html">Unregister</a>
-<a href="request.html">Request</a>
-<a href="residency.html">Residency Info</a>
-</div>
-</header>
-<h1 style="margin-top: 50px;">Barangay VI-D</h1>
-
-<footer class="footer">
-<div class="footer-container">
-<div class="footer-left">
-<p>&copy; 2024 VI-D. All rights reserved.</p>
-</div>
-</div>
-<div style="padding: 20px;">
-</footer>
-<style>
-body{
-background-image: url("main.jpg");
-color: white;
-}
-</style>
+  <header>
+    <div class="topnav">
+      <a class="active" href="register.html">Register</a>
+      <a href="unregister.html">Unregister</a>
+      <a href="request.html">Request</a>
+      <a href="residency.html">Residency Info</a>
+    </div>
+  </header>
+  <h1>Barangay VI-D</h1>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>&copy; 2024 VI-D. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
